@@ -8,7 +8,7 @@ export default function App() {
     <SafeAreaProvider>
       <View style={globalStyles.container}>
         <StatusBar style="auto" />
-        <Text>Dukaflani Mobile App!</Text>
+        <Text>Dukaflani Mobile App!!</Text>
       </View>
     </SafeAreaProvider>
   );
