@@ -24,6 +24,19 @@ const globalStyles = StyleSheet.create({
     heading: {
       fontFamily: 'Roboto-Medium',
       color: THEME_COLORS.textColor
+    },
+    headerNav: {
+      width: '100%',
+      height: '100%',
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between'
+    },
+    navIconContainer: {
+      flexDirection: 'row',
+    },
+    navIcon: {
+      marginHorizontal: 10,
     }
   });
 

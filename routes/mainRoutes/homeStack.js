@@ -1,3 +1,4 @@
+import React from 'react';
 // React Navigation
 import { createStackNavigator } from '@react-navigation/stack';
 // Project Constants
@@ -5,6 +6,7 @@ import { ROUTES } from '../../constants/routes';
 import { THEME_COLORS } from '../../constants/colors';
 // Shared Components
 import BottomTabNavigator from '../../components/sharedComponents/BottomTabNavigator';
+import Header from '../../components/sharedComponents/Header';
 // Screens 
 import Login from '../../screens/authScreens/login';
 import VideoDetail from '../../screens/mainScreens/videoDetail';
@@ -26,9 +28,11 @@ function HomeStack() {
       <Stack.Screen 
         name={ROUTES.HOME} 
         component={BottomTabNavigator}
-        options={{
-            title: 'Dukaflani',
-          }}
+        options={({ navigation }) => {
+          return {
+            headerTitle: () => <Header navigation={navigation} />,
+          }
+        }}
          />
       <Stack.Screen 
         name={ROUTES.VIDEODETAIL} 
