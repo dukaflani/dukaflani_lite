@@ -1,4 +1,4 @@
-import globalStyles from '../styles/globalStyles';
+import globalStyles from '../../styles/globalStyles';
 import { View, Text } from 'react-native'
 
 const Header = () => {

@@ -1,18 +1,20 @@
 import 'react-native-gesture-handler';
-
+// Styles
 import globalStyles from './styles/globalStyles';
+// React Imports
 import { useCallback } from 'react';
-
+// Expo Imports
 import { useFonts } from 'expo-font'
 import { StatusBar } from 'expo-status-bar';
 import * as SplashScreen from 'expo-splash-screen';
-
-import { Text, View } from 'react-native';
+// React Native Imports
+import {  View } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { NavigationContainer } from '@react-navigation/native';
-
-
-import HomeStack from './routes/homeStack';
+// Project Routes
+import HomeStack from './routes/mainRoutes/homeStack';
+// Shared Components
+import BottomTabNavigator from './components/sharedComponents/BottomTabNavigator';
 
 
 SplashScreen.preventAutoHideAsync();
